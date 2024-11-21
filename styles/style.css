@@ -163,9 +163,12 @@ main aside form h2 {
     font-size: 35px;
 }
 
-main aside form h3 {
+main aside form label {
+    font-family: var(--fonte-secundaria);
     font-weight: 500;
+    font-size: 18px;
     text-align: justify;
+    margin-bottom: 5px;
 } 
 
 main aside form input {
@@ -175,7 +178,7 @@ main aside form input {
     color: var(--cor-terciaria);
 }
 
-main aside form :nth-child(11) {
+main aside form :nth-child(16) {
     margin-bottom: 30px;
 }
 
