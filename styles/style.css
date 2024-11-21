@@ -12,7 +12,7 @@
   --cor-primaria: #f1f1f1;
   --cor-secundaria: #571fb3;
   --cor-terciaria: #8113ff;
-  --cor-fundo: #985bfa;
+  --cor-fundo: #985bfa;  --cor-fundo2:  #581fb348;
   --cor-hover: #ff569f;
 }
 
@@ -162,12 +162,15 @@ main aside form h2 {
 }
 
 main aside form label {
+  color: var(--cor-terciaria);
   font-family: var(--fonte-secundaria);
   font-weight: 500;
   font-size: 18px;
   text-align: justify;
   margin-bottom: 5px;
 }
+
+
 
 main aside form input {
   border: none;
