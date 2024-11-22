@@ -285,11 +285,12 @@ main section p {
 
 /* fopter */
 footer {
-  height: 58px;
+  height: 50px;
   background-color: var(--cor-terciaria);
-  text-align: center;
-  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: var(--fonte-secundaria);
   color: var(--cor-primaria);
-  font-size: 20px;
+  font-size: 16px;
 }
