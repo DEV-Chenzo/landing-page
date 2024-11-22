@@ -11,8 +11,9 @@
   --cor-black: #000000;
   --cor-primaria: #f1f1f1;
   --cor-secundaria: #571fb3;
-  --cor-terciaria: #8113ff;
-  --cor-fundo: #985bfa;  --cor-fundo2:  #581fb348;
+  --cor-terciaria: #7d14f5;
+  --cor-fundo: #985bfa;
+  --cor-fundo2:  #581fb348;
   --cor-hover: #ff569f;
 }
 
@@ -120,7 +121,8 @@ section.texto {
   align-content: center;
   text-align: center;
   padding: 80px;
-  color: var(--cor-primaria);
+  color: white;
+  text-shadow: 1px 1px 2px#581fb398;
   background-image: url("../images/aeroporto2.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -128,6 +130,7 @@ section.texto {
   font-family: var(--fonte-secundaria);
 }
 
+/* main */
 main {
   background-color: var(--cor-fundo);
   display: grid;
@@ -138,6 +141,7 @@ main {
   padding: 80px;
 }
 
+/* main aside */
 main aside {
   max-width: 400px;
   padding: 80px;
@@ -170,13 +174,16 @@ main aside form label {
   margin-bottom: 5px;
 }
 
-
-
 main aside form input {
   border: none;
   border-bottom: 1px solid var(--cor-terciaria);
   padding: 10px;
-  color: var(--cor-terciaria);
+  font-size: 1em;
+}
+
+main aside form input:focus-visible {
+  outline: none;
+  border-bottom: 2px solid var(--cor-terciaria);
 }
 
 main aside form :nth-child(15) {
@@ -195,9 +202,14 @@ main aside form button {
   font-size: 16px;
   font-weight: 700;
   background-color: var(--cor-terciaria);
-  transition: 0.5s;
+  transition: 0.4s;
 }
 
+main aside form button:hover{
+  background-color: var(--cor-hover);
+}
+
+/* main section */
 main section {
   max-width: 500px;
   padding: 10px;
@@ -224,19 +236,56 @@ main section {
   max-width: 100%;
 }
 
+
 .puerto {
   grid-column: 1;
+  transition: 0.4s;
 }
 
 .sanpedro {
   grid-column: 2;
+  transition: 0.4s;
 }
 
 .Cachoeira {
   grid-column: 3;
+  transition: 0.4s;
+}
+
+.puerto:hover, .sanpedro:hover, .Cachoeira:hover {
+  transform: scale(1.4);
+  transition: 1s;
+
 }
 
 .valparaiso {
   grid-row: 2;
   grid-column: span 3;
+  transition: 0.4s;
+}
+
+.valparaiso:hover {
+  transform: scale(1.15);
+  transition: 0.9s;
+}
+
+main section p {
+  text-align: justify;
+  padding: 7px 24px;
+  position: inherit;
+  font-size: 20px;
+  font-family: var(--fonte-secundaria);
+  color: var(--cor-primaria);
+  margin-top: 0px;
+ }   /* fim do main */
+
+
+/* fopter */
+footer {
+  background-color: var(--cor-terciaria);
+  text-align: center;
+  padding: 15px;
+  font-family: var(--fonte-secundaria);
+  color: var(--cor-primaria);
+  font-size: 20px;
 }
