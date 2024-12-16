@@ -108,6 +108,10 @@ header nav ul li button:hover {
   background-color: var(--cor-hover);
 }
 
+/* header nav ul li a:focus-visible, header nav ul li button:focus-visible {
+  transform: scale(0.9);
+}  */
+
 /* Conteúdo principal */
 div.grid {
   display: grid;
@@ -174,6 +178,11 @@ main aside form label {
   font-size: 18px;
   text-align: justify;
   margin-bottom: 5px;
+  transition: 0.8s;
+}
+
+main aside form label:has(+input:focus-visible) {
+  color: var(--cor-hover);
 }
 
 main aside form input {
@@ -181,11 +190,12 @@ main aside form input {
   border-bottom: 1px solid var(--cor-terciaria);
   padding: 10px;
   font-size: 1em;
+  transition: 0.5s;
 }
 
 main aside form input:focus-visible {
   outline: none;
-  border-bottom: 2px solid var(--cor-terciaria);
+  border-bottom: 1.5px solid var(--cor-hover);
 }
 
 main aside form :nth-child(15) {

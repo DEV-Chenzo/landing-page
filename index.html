@@ -43,23 +43,23 @@
       <main>
         <!-- barra lateral -->
         <aside>
-          <form action="#" method="post">
+          <form action="#" method="get">
+            <!-- formulário com method post para verificar se os dados estão sendo obtidos corretamente porem, no futuro, irei usar o get juntamente com o javascript. -->
             <h2><span class="destaque">Cadastre-se</span> agora <br>e viaje com a Sonhe alto</h2>
-            <!-- <h3>Nome</h3> -->
             <label for="nome">Nome</label>
-            <input type="text" id="nome" placeholder="Nome"/>
+            <input type="text" id="nome" name="nome" placeholder="Nome"/>
             <br>
             <label for="sobrenome">Sobrenome</label>
-            <input type="text" id="sobrenome" placeholder="Sobrenome"/>
+            <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome"/>
             <br>
             <label for="my-email">E-mail</label>
-            <input type="email" id="my-email" placeholder="E-mail"/>
+            <input type="email" id="my-email" name="email" placeholder="E-mail"/>
             <br>
             <label for="senha">Insira sua Senha</label>
-            <input type="password" id="senha" placeholder="Senha"/>
+            <input type="password" id="senha" name="senha" placeholder="Senha"/>
             <br>
             <label for="confirmar-senha">Confirme sua Senha</label>
-            <input type="password" id="confirmar-senha" placeholder="Confirme a Senha"/>
+            <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Confirme a Senha"/>
             <br>
             <button type="submit" class="botao">Cadastre-se</button>
           </form>
